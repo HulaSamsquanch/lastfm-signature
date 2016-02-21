@@ -2,11 +2,13 @@
 <html>
 <head>
 <script>
-document.getElementById("textt").innerHTML = "lastfm";
+function updateText(){
+  document.getElementById("textt").innerHTML = "lastfm";
+}
 </script>
 </head>
 
-<body>
+<body onload="script();">
 <div id="textt"></div>
 </body>
 </html> 
