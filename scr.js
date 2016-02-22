@@ -7,8 +7,7 @@ function getLastListened(user){
  var lastAlbumArt = $($(data.recenttracks.track).get(0).image).get(0)['#text'];
  var lastArtist = $(data.recenttracks.track).get(0).artist['#text'];
  var lastName = $(data.recenttracks.track).get(0).name; 
-  	
-    alert(lastAlbumArt);
+    ///alert(lastAlbumArt);
     document.getElementById("albumArt").src = lastAlbumArt;
     document.getElementById("songInfo").innerHTML = "<b>" + lastName + "</b>" + "  by " + "<b>" + lastArtist + "</b>";
     
